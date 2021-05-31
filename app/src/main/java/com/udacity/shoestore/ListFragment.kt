@@ -25,9 +25,8 @@ class ListFragment : Fragment() {
             DataBindingUtil.inflate(inflater, R.layout.list_fragment, container, false)
 
         binding.addButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_detailFragment_to_listFragment)
+            Navigation.createNavigateOnClickListener(R.id.action_listFragment_to_detailFragment)
         )
-//TODO: Fix this!
         return binding.root
     }
 
